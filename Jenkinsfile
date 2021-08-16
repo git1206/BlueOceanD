@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('QA') {
+      steps {
+        input(message: 'Deploy?', ok: 'Yes')
+      }
+    }
+
   }
 }
